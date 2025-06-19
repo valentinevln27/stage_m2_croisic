@@ -1,0 +1,4 @@
+maregraphe;hf;hfd;vtd;vh;num;id;lon;lat;NM;xynthia
+Saint-Nazaire            ;nofile;nofile;37_1821.txt;37_1821.txt;4;37;-2.20155000000000;47.26686200000000;3.61;1
+Sables-D-Olonne          ;nofile;nofile;62_1995.txt;62_1965.txt;5;62;-1.79352800000000;46.49735800000000;3.31;1
+Croisic                  ;croisicZH.txt;nofile;nofile;nofile;7;99;-2.51508420000000;47.29806010000000;3.30;1
