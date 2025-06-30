@@ -203,4 +203,4 @@ Afin de lancer les simulations, quelques étapes sont nécessaires.
 - Importer les données des points sélectionnés sur BlueKenue.
 - Calculer la marée prédite pour les points simulés lorsque les paramètres météo-océaniques sont ajoutés.
 - Comparer les deux signaux pour valider ou invalider le modèle grâce aux indicateurs RMSE, MAE et PBIAIS (formules données dans le rapport de stage).<br>
-📌 Remarque : le script utilisé a été `stage_m2_tide_v5`. Les autres versions ont été utilisées pour ... .
+📌 Remarque : le script utilisé a été `stage_m2_tide_v5`. Les autres versions ont été utilisées pour sauvegarder le script au cas où les dernières versions n'étaient pas bonnes, et pour les comparaisons des données avec les anciens modèles.
