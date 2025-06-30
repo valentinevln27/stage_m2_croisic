@@ -15,7 +15,7 @@ Dans le dossier [boundaries](https://github.com/valentinevln27/stage_m2_croisic/
 Le dossier [cli](https://github.com/valentinevln27/stage_m2_croisic/tree/main/bluekenue_files/cli) présente les fichiers définissant les conditions aux limites selon le facteur d'aggrandissement utilisé pour réaliser le maillage.
 
 ## Densités
-Le dossier [densities](https://github.com/valentinevln27/stage_m2_croisic/tree/main/bluekenue_files/densities) regroupe les densités utilisées pour affiner le maillage à des emplacements spécifiques, comme la zone du Croisic, les bouées Candhis, ou les marégraphes.
+Le dossier [densities](https://github.com/valentinevln27/stage_m2_croisic/tree/main/bluekenue_files/densities) regroupe les densités utilisées pour affiner le maillage à des emplacements spécifiques, comme la zone du Croisic et de la flèche de Pen Bron, les bouées Candhis, ou les marégraphes (du Croisic, de Saint-Nazaire et des Sables d'Olonne).
 
 ## Fichiers de géométrie
 Le dossier [geoz0r5m](https://github.com/valentinevln27/stage_m2_croisic/tree/main/bluekenue_files/geoz0r5m), selon le facteur d’agrandissement appliqué, comprend les fichiers de géométrie. Ces derniers combinent différentes longueurs de rugosité z₀ en fonction de la nature du fond marin, ainsi qu'une bathymétrie rabotée à 5 mètres.
