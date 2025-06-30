@@ -1,7 +1,7 @@
 # Méthodologie de génération des fichiers de conditions aux limites et de géométrie pour les simulations hydrodynamiques
 
 Pour réaliser les simulations hydrodynamiques, il est nécessaire de générer à la fois les fichiers de conditions aux limites et de géométrie.
-Ce document décrit, étape par étape, la méthode employée dans le cadre de l'étude d'impact de la porte anti-submersion du Croisic, afin d’assurer la compréhension et la reproductibilité du travail effectué.
+Ce document décrit, étape par étape, la méthode employée dans le cadre de l'étude d'impact de la porte anti-submersion du Croisic, afin d’assurer la compréhension et la reproductibilité du travail effectué. De plus, seules les dernières versions des scripts utilisés pour réaliser cette méthodologie sont données.
 
 
 ## Définition du trait de côte et du domaine
@@ -32,7 +32,7 @@ Pour les domaines larges, deux autres segments de trait de côte (au nord et au 
 - Calculer la distance restante entre le dernier point sélectionné et l'extrémité du trait de côte.
 - En déduire un espacement constant pour les derniers points.
 - Exporter le tout en un shapefile.<br>
-📌 Remarque : le script utilisé a été `stage_m2_cut_points_v2`. La première version du code n'a pas été utilisée pour les modèles et n'est pas disponible comme non utilisée.
+📌 Remarque : le script utilisé a été `cut_points_v2`. La première version du code n'a pas été utilisée pour les modèles et n'est pas disponible comme non utilisée.
 
 **QGIS :**
 - Combiner les trois segments de trait de côte (nord, sud, Croisic) pour créer une polyligne complète du domaine élargi.
@@ -102,7 +102,7 @@ Le maillage a été généré à l’aide de BlueKenue, en utilisant le trait de
 **PYTHON :**
 - Importer le maillage avec les valeurs de bathymétrie.
 - Pour toutes les profondeurs supérieures à 5 m, fixer cette valeur comme seuil.<br>
-📌 Remarque : le script utilisé a été `rabotage`.
+📌 Remarque : le script utilisé a été `trimming`.
 
 **BLUEKENUE :**
 - Importer le maillage contenant l'information de bathymétrie.
@@ -141,7 +141,7 @@ Pour les plus grands modèles :
     si 'typelem' (donnant la nature de fond à un polygone donné) commence par 'NFS' ou 'NFV', alors la valeur dans 'NF' sera 'NFSV'
 ```
 - Sauvegarder le fichier modifié au format shapefile.<br>
-📌 Remarque : le script utilisé a été `stage_m2_nf_v2`. L'autre version a été utilisée pour les 3 plus petits domaines.
+📌 Remarque : le script utilisé a été `bottom_nature_v2`. L'autre version a été utilisée pour les 3 plus petits domaines.
 
 **QGIS :**
 - Simplifier ce dernier fichier pour les deux plus petits domaines (non utilisés dans le modèle final).
@@ -151,7 +151,7 @@ Pour les plus grands modèles :
 - Construire les combinaisons possibles selon les valeurs de nature du fond choisies (les coefficients sont donnés par modèle dans le fichier Excel de résultats).
 - Ajouter les combinaisons de Ks en colonnes et les valeurs correspondantes selon la nature du fond.
 - Exporter le shapefile modifié.<br>
-📌 Remarque : le script utilisé a été `stage_m2_combinaisons_v2`. L'autre version a été utilisée pour les trois plus petits domaines.
+📌 Remarque : le script utilisé a été `combinaisons_v2`. L'autre version a été utilisée pour les trois plus petits domaines.
 
 **QGIS :**
 - Importer la couche de nature du fond avec les combinaisons.
@@ -203,4 +203,4 @@ Afin de lancer les simulations, quelques étapes sont nécessaires.
 - Importer les données des points sélectionnés sur BlueKenue.
 - Calculer la marée prédite pour les points simulés lorsque les paramètres météo-océaniques sont ajoutés.
 - Comparer les deux signaux pour valider ou invalider le modèle grâce aux indicateurs RMSE, MAE et PBIAIS (formules données dans le rapport de stage).<br>
-📌 Remarque : le script utilisé a été `stage_m2_tide_v5`. Les autres versions ont été utilisées pour sauvegarder le script au cas où les dernières versions n'étaient pas bonnes, et pour les comparaisons des données avec les anciens modèles.
+📌 Remarque : le script utilisé a été `tide_comparison_v5`. Les autres versions ont été utilisées pour sauvegarder le script au cas où les dernières versions n'étaient pas bonnes, et pour les comparaisons des données avec les anciens modèles.
