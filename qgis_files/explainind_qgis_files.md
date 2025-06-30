@@ -1,12 +1,12 @@
-# Explications des fichiers du dossier Qgis
+# Description des fichiers du dossier Qgis
 
 ## Matériaux de fonds
-Le dossier [bed_materials](https://github.com/valentinevln27/stage_m2_croisic/tree/main/qgis_files/bed_materials) contient les fichiers de la couche de nature de fond du domaine d'étude. Les informations contenues dans cette couche sont la classe de nature de fond et la valeur de rugosité de fond z0 correspondante suivant les différentes combinaisons.
+Le dossier [bed_materials](https://github.com/valentinevln27/stage_m2_croisic/tree/main/qgis_files/bed_materials) contient les fichiers de la couche de nature de fond du domaine d'étude. Cette couche fournit, pour chaque zone, la classe de nature de fond (roche, graviers et cailloutis, sable et vase) ainsi que la valeur correspondante de la longueur de rugosité z₀, en fonction des différentes combinaisons possibles.
 
 ## Frontières
-Dans le dossier [outline_croisic](https://github.com/valentinevln27/stage_m2_croisic/tree/main/qgis_files/outline_croisic) se trouve la ligne délimitant le domaine sans porte anti-submersion au niveau du chenal de Pen Bron.
-Le dossier [outline_gate](https://github.com/valentinevln27/stage_m2_croisic/tree/main/qgis_files/outline_gate) contient, quent à lui, la délimitation du domaine avec cette porte anti-submersion.
-Finalement, le dossier outline_island continent les contours des diverses iles inclusent dans le domaine.
+Le dossier [outline_croisic](https://github.com/valentinevln27/stage_m2_croisic/tree/main/qgis_files/outline_croisic) comprend la ligne délimitant le domaine sans porte anti-submersion au niveau du chenal de Pen Bron.
+Le dossier [outline_gate](https://github.com/valentinevln27/stage_m2_croisic/tree/main/qgis_files/outline_gate) fourni, quant à lui, la délimitation du domaine avec cette porte anti-submersion.
+Finalement, le dossier outline_island regroupe les contours des diverses îles inclusent dans le domaine.
 
 ## A ajouter
 - les iles
