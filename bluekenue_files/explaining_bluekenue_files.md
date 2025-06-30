@@ -1,4 +1,4 @@
-# Explications des fichiers du dossier BlueKenue
+# Description des fichiers du dossier BlueKenue
 
 ## Frontières
 Dans le dossier [boundaries](https://github.com/valentinevln27/stage_m2_croisic/tree/main/bluekenue_files/boundaries) contient les délimitations du domaine étudié ainsi que celles des îles qui y sont incluses. Chaque titre de fichier des îles précise la distance entre deux points successifs et le numéro correspondant à l'île comme suit :
@@ -23,6 +23,6 @@ Le dossier [geoz0r5m](https://github.com/valentinevln27/stage_m2_croisic/tree/ma
 ## Maillage
 Le dossier [mesh](https://github.com/valentinevln27/stage_m2_croisic/tree/main/bluekenue_files/mesh) contient les maillages bruts (i.e sans bathymétrie et frottement de fond) générés sans porte anti-submersion, en fonction des facteurs d’agrandissement utilisés. Un maillage avec porte anti-submersion est également disponible pour le facteur 1,35.
 
-## Points
+## Points de comparaison
 Le dossier [points](https://github.com/valentinevln27/stage_m2_croisic/tree/main/bluekenue_files/points) comprend les valeurs de sorties (i.e. l'élévation de la surface libre et la vitesse des courants) aux points utilisés pour comparer les données du modèle avec les prédictions marégraphiques fournies par le SHOM. 
 
