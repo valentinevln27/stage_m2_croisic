@@ -12,13 +12,14 @@ Dans le dossier [boundaries](https://github.com/valentinevln27/stage_m2_croisic/
 - 8 : Groix
 
 ## Conditions aux limites
-Le dossier [cli](https://github.com/valentinevln27/stage_m2_croisic/tree/main/bluekenue_files/cli) présente les conditions aux limites selon le facteur d'aggrandissement du maillage choisi.
+Le dossier [cli](https://github.com/valentinevln27/stage_m2_croisic/tree/main/bluekenue_files/cli) présente les fichiers définissant les conditions aux limites selon le facteur d'aggrandissement utilisé pour réaliser le maillage.
 
 ## Densités
-Le dossier [densities](https://github.com/valentinevln27/stage_m2_croisic/tree/main/bluekenue_files/densities) donne les densités qui ont permis de raffiner le maillage à des endroits spécifiques tels que le Croisic ou les points correspondants aux localisations des bouées Candhis ou des marégraphes.
+Le dossier [densities](https://github.com/valentinevln27/stage_m2_croisic/tree/main/bluekenue_files/densities) regroupe les densités utilisées pour affiner le maillage à des emplacements spécifiques, comme la zone du Croisic, les bouées Candhis, ou les marégraphes.
 
 ## Fichiers de géométrie
-Le dossier [geoz0r5m](https://github.com/valentinevln27/stage_m2_croisic/tree/main/bluekenue_files/geoz0r5m) subdivisé en deux sous-dossier suivant le facteur d'aggrandissement choisi pour le maillage, comprend les fichiers de géométrie suivant les combinaisons de la longueur de rugosité z0. Dans ces fichiers de géométrie, il y a donc la longueur de rugosité suivant la nature du fond et la bathymétrie rabottée à 5 m.
+Le dossier [geoz0r5m](https://github.com/valentinevln27/stage_m2_croisic/tree/main/bluekenue_files/geoz0r5m), selon le facteur d’agrandissement appliqué, comprend les fichiers de géométrie. Ces derniers combinent différentes longueurs de rugosité z₀ en fonction de la nature du fond marin, ainsi qu'une bathymétrie lissée à 5 mètres.
+ m.
 
 ## Maillage
 Dans le dossier [mesh](https://github.com/valentinevln27/stage_m2_croisic/tree/main/bluekenue_files/mesh) se trouve les maillages bruts sans porte anti-submersion suivant les facteurs d'aggrandissement du maillage et avec porte pour le facteur 1,35.
