@@ -108,7 +108,8 @@ Le maillage a été généré à l’aide de BlueKenue, en utilisant le trait de
 - Importer le maillage contenant l'information de bathymétrie.
 - Enregistrer le fichier au format xyz.
 - Créer un nouvel interpolateur, puis y ajouter le maillage avec la bathymétrie.
-- Ajouter la bathymétrie via l'interpolateur au maillage avec les densités, soit en couche t3s (Tools > MapObject > select interpolator). ⚠️ Attention : bien sélectionner la bathymétrie rabotée avant d’utiliser MapObject.
+- Ajouter la bathymétrie via l'interpolateur au maillage avec les densités, soit en couche t3s (Tools > MapObject > select interpolator).<br>
+  ⚠️ Attention : bien sélectionner la bathymétrie rabotée avant d’utiliser MapObject.
 - Créer un nouveau fichier slf avec ce maillage interpolé, puis ajouter la variable Bottom (unité : M).
 - Enregistrer ce fichier.
 
