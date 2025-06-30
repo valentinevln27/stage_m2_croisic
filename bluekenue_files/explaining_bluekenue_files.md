@@ -18,12 +18,11 @@ Le dossier [cli](https://github.com/valentinevln27/stage_m2_croisic/tree/main/bl
 Le dossier [densities](https://github.com/valentinevln27/stage_m2_croisic/tree/main/bluekenue_files/densities) regroupe les densités utilisées pour affiner le maillage à des emplacements spécifiques, comme la zone du Croisic, les bouées Candhis, ou les marégraphes.
 
 ## Fichiers de géométrie
-Le dossier [geoz0r5m](https://github.com/valentinevln27/stage_m2_croisic/tree/main/bluekenue_files/geoz0r5m), selon le facteur d’agrandissement appliqué, comprend les fichiers de géométrie. Ces derniers combinent différentes longueurs de rugosité z₀ en fonction de la nature du fond marin, ainsi qu'une bathymétrie lissée à 5 mètres.
- m.
+Le dossier [geoz0r5m](https://github.com/valentinevln27/stage_m2_croisic/tree/main/bluekenue_files/geoz0r5m), selon le facteur d’agrandissement appliqué, comprend les fichiers de géométrie. Ces derniers combinent différentes longueurs de rugosité z₀ en fonction de la nature du fond marin, ainsi qu'une bathymétrie rabotée à 5 mètres.
 
 ## Maillage
-Dans le dossier [mesh](https://github.com/valentinevln27/stage_m2_croisic/tree/main/bluekenue_files/mesh) se trouve les maillages bruts sans porte anti-submersion suivant les facteurs d'aggrandissement du maillage et avec porte pour le facteur 1,35.
+Le dossier [mesh](https://github.com/valentinevln27/stage_m2_croisic/tree/main/bluekenue_files/mesh) contient les maillages bruts (i.e sans bathymétrie et frottement de fond) générés sans porte anti-submersion, en fonction des facteurs d’agrandissement utilisés. Un maillage avec porte anti-submersion est également disponible pour le facteur 1,35.
 
 ## Points
-Le dossier [points](https://github.com/valentinevln27/stage_m2_croisic/tree/main/bluekenue_files/points) contient les points utilisés pour comparer les données du modèles avec celles issues des prédictions marégraphiques. 
+Le dossier [points](https://github.com/valentinevln27/stage_m2_croisic/tree/main/bluekenue_files/points) comprend les valeurs de sorties (i.e. l'élévation de la surface libre et la vitesse des courants) aux points utilisés pour comparer les données du modèle avec les prédictions marégraphiques fournies par le SHOM. 
 
