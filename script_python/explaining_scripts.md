@@ -11,6 +11,23 @@ This script (version 2) generates different combinations of coefficients based o
 ## [compiling_grib_data](https://gitlab.univ-nantes.fr/vanleene-v-1/croisic_stage/-/blob/main/script_python/compiling_grib_data.py)
 This script processes meteorological wind data from different GRIB files and compile them into a single NetCDF file. The result file of compiled data is used to analyse storms to identify a theorical storm.
 
+## [completing_mesh_v3](https://gitlab.univ-nantes.fr/vanleene-v-1/croisic_stage/-/blob/main/script_python/completing_mesh_v3.py)
+This script adds points to complete the studied domain defined by two offshore 
+points. The eastern side of the domain is formed by a coastline construct in
+QGIS. The final GeoDataFrame containing the added points is then exported as a
+shapefile.
+
+The first point on the coastline (South) has an ID of 1, while the last one has 
+an ID of m. The point at the northwestern corner of the rectangle has an ID of 
+m+1, and the point at the southwestern corner has an ID of m+2.
+
+For better visualization, a plot is generated at the end of the script to display 
+the domain drawn with points, including the coastline, with the IDs of the 
+mentioned points labeled.
+
+Notes: Some parameters may need to be changed such as the maximal distance 
+between two points.
+
 ## [cut_points](https://gitlab.univ-nantes.fr/vanleene-v-1/croisic_stage/-/blob/main/script_python/cut_points_v2.py)
 In this script (version 2), we work with either the southern or northern section of the coastline around Le Croisic and the Guérande salt marshes.
 <br>
