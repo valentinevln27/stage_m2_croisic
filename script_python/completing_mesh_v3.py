@@ -5,7 +5,7 @@ Created on Mon Mar 24 14:33:36 2025
 @author: vanleene valentine
 """
 
-#%% Explaining the script
+#%% Explaining what the script does
 """ 
 This script adds points to complete the studied domain defined by two offshore 
 points. The eastern side of the domain is formed by a coastline construct in
