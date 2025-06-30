@@ -1,4 +1,4 @@
-# Explications des fichiers BlueKenue
+# Explications des fichiers du dossier BlueKenue
 
 ## Frontières
 Dans le dossier [boundaries](https://github.com/valentinevln27/stage_m2_croisic/tree/main/bluekenue_files/boundaries) se trouve les délimitations du domaine et des iles comprises dans ce dernier.
