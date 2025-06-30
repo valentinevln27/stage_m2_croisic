@@ -1,8 +1,7 @@
 # Explications des fichiers du dossier BlueKenue
 
 ## Frontières
-Dans le dossier [boundaries](https://github.com/valentinevln27/stage_m2_croisic/tree/main/bluekenue_files/boundaries) se trouve les délimitations du domaine et des iles comprises dans ce dernier.
-Dans le titre des lignes des iles est précisé l'espace entre deux points de la ligne et le numéro de chaque ile :
+Dans le dossier [boundaries](https://github.com/valentinevln27/stage_m2_croisic/tree/main/bluekenue_files/boundaries) contient les délimitations du domaine étudié ainsi que celles des îles qui y sont incluses. Chaque titre de fichier des îles précise la distance entre deux points successifs et le numéro correspondant à l'île comme suit :
 - 1 : ile d'Oléron
 - 2 : ile de Ré
 - 3 : ile d'Yeu
