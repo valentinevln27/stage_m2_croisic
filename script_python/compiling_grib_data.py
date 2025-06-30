@@ -5,7 +5,7 @@ Created on Tue Apr 29 10:29:27 2025
 @author: vanleene valentine
 """
 
-#%% Explaination of the script
+#%% Explaining what the script does
 """
 This script processes meteorological wind data from different GRIB files and 
 compile them into a single NetCDF file.
