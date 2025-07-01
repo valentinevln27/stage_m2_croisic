@@ -18,6 +18,7 @@ Dans le dossier qgis. Données issues du SHOM mais avec la couche déjà avec le
 Second groupe de fichiers qgis pareil mais avec les valeurs de longueur de rugosité suivant la combinaison et la classe. Couche obtenue via la script combinations avec en entrée la couche décrite précédemment.
 
 ## MNT
-Aussi dans le dossier qgis
+Aussi dans le dossier qgis. Données du SHOM avec 2 résolutions : 1/500000 et 1/50000. MNT bathy de l'Atlantique, MNT topo-bathy du Morbihan, des pertuis Charentais et de la Gironde aval.
+Le fichier mnt_group, regroupe ces mnt.
 
 -> Pas oublier de donner les sources
