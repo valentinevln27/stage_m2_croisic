@@ -1,6 +1,6 @@
 # Description of all scripts used during the internship
 
-Note that all descriptions are provided at the beginning of each script.
+All of these descriptions are provided at the beginning of each script.
 
 ## [bottom_nature](https://gitlab.univ-nantes.fr/vanleene-v-1/croisic_stage/-/blob/main/script_python/bottom_nature_v2.py)
 This script (version 2) processes a shapefile containing spatial data about bed materials and classifies different substrate types into three broad categories. It then counts the number of polygons belonging to each category.
@@ -18,7 +18,7 @@ The first point on the coastline (South) has an ID of 1, while the last one has 
 <br>
 For better visualization, a plot is generated at the end of the script to display the domain drawn with points, including the coastline, with the IDs of the mentioned points labeled.
 <br>
-Note: Some parameters may need to be changed such as the maximal distance between two points.
+📌 Note: Some parameters may need to be changed such as the maximal distance between two points.
 
 ## [cut_points](https://gitlab.univ-nantes.fr/vanleene-v-1/croisic_stage/-/blob/main/script_python/cut_points_v2.py)
 In this script (version 2), we work with either the southern or northern section of the coastline around Le Croisic and the Guérande salt marshes.
