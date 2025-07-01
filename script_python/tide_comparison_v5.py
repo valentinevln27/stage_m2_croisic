@@ -130,7 +130,7 @@ PBIAIS = []
 for i in range(len(tg_code)):
     for j in range(len(storms)):    
         # Tide gauge datas
-        file_path_tg = f'../excel/data_prediction/data_{tg_code[i]}_{storms[j]}.csv'
+        file_path_tg = f'../data_stage_m2/records/outputs/{storm[j]}/data_{tg_code[i]}_{storms[j]}.csv'
         df_tg = pd.read_csv(file_path_tg)
         df_tg['time'] = pd.to_datetime(df_tg['time']) 
         

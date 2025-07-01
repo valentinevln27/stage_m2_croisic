@@ -25,7 +25,7 @@ import os
 import pandas as pd
 
 #%% Data extraction and useful lists
-file_path = '../excel/data_prediction/data_prediction_all.xlsx'
+file_path = '../data_stage_m2/records/data_prediction_all.xlsx'
 df_tg = pd.read_excel(file_path)
 df_tg.time = pd.to_datetime(df_tg.time)
 df_tg['time'] = pd.to_datetime(df_tg['time']).dt.round('s')
@@ -47,7 +47,7 @@ for i in range(3):
         
         # Saving the data
         # Define the output file path
-        exit_path = f'../excel/data_prediction/data_{code_tg[j]}_{storm[i]}.csv'
+        exit_path = f'../data_stage_m2/records/outputs/{storm[i]}/data_{code_tg[j]}_{storm[i]}.csv'
         # If a NetCDF file already exists at the output path, delete it
         if os.path.exists(exit_path):
             os.remove(exit_path)
