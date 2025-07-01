@@ -12,7 +12,7 @@ Ce script (version 2) génère différentes combinaisons de coefficients ou long
 Ce script traite les données météorologiques (vent et pression atmosphérique) issues de différents fichiers GRIB et les compile dans un seul fichier NetCDF. Le fichier compilé est utilisé pour analyser les tempêtes et identifier une tempête théorique.
 
 ## [completing_mesh_v3](https://gitlab.univ-nantes.fr/vanleene-v-1/croisic_stage/-/blob/main/script_python/completing_mesh_v3.py)
-Ce script ajoute des points pour compléter le domaine étudié défini par deux points au large. Le côté est du domaine est formé par un trait de côte construit dans QGIS. La GeoDataFrame finale contenant les points ajoutés est ensuite exportée en tant que shapefile.
+Ce script ajoute des points pour compléter le domaine étudié défini par deux points au large. Le côté Est du domaine est formé par un trait de côte construit dans QGIS. Le GeoDataFrame final contenant les points ajoutés est ensuite exporté en tant que shapefile.
 <br>
 Le premier point sur le trait de côte (au sud) a un ID de 1, tandis que le dernier a un ID de m. Le point dans le coin nord-ouest du rectangle a un ID de m+1, et celui dans le coin sud-ouest a un ID de m+2.
 <br>
