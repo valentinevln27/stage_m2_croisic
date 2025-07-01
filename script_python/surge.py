@@ -40,15 +40,19 @@ print(f"Maximal surge without barrier : {max(df['surge']):.2f} m")
 print(f"Maximal surge with barrier : {max(df_gate['surge']):.2f} m")
 
 #%% Surge graphical representation (model)
+# Surge without barrier
 plt.figure(dpi=300)
 plt.plot(df['complete_date'], df['surge'])
+# plt.title('Surge at Le Croisic without storm surge barrier')
 plt.ylabel('Surge (m)')
 plt.xticks(rotation=25)  
 plt.grid()
 plt.show()
 
+# Surge with storm surge barrier
 plt.figure(dpi=300)
 plt.plot(df_gate['complete_date'], df_gate['surge'])
+# plt.title('Surge at Le Croisic with storm surge barrier')
 plt.ylabel('Surge (m)')
 plt.xticks(rotation=25)  
 plt.grid()
@@ -83,6 +87,7 @@ plt.plot(df['complete_date'], df[' FREE SURFACE'],
          label='Without storm surge barrier', linewidth=0.5)
 plt.plot(df_gate['complete_date'], df_gate[' FREE SURFACE'], 
          label='With storm surge barrier', linewidth=0.5)
+# plt.title('Sea level at Le Croisic with and without storm surge barrier')
 plt.ylabel('Surge (m)')
 plt.xticks(rotation=25)
 plt.grid()
@@ -94,6 +99,7 @@ plt.figure(dpi=300)
 plt.plot(df['complete_date'], df['surge'], label='Without storm surge barrier')
 plt.plot(df_gate['complete_date'], df_gate['surge'], 
          label='With storm surge barrier')
+# plt.title('Surge at Le Croisic with and without storm surge barrier')
 plt.ylabel('Surge (m)')
 plt.xticks(rotation=25) 
 plt.grid()
@@ -114,9 +120,9 @@ ax.plot(df_gate['complete_date'], df_gate['surge'],
 ax.set_ylabel('Surge (m)')
 ax.tick_params(axis='x', rotation=25)
 ax.legend()
-ax.set_title("Surge with and without storm surge barrier")
+ax.set_title("Surge at Le Croisic with and without storm surge barrier")
 
-# Zoom
+# Zoom of the period including the maximal surge
 axins = inset_axes(ax, width="35%", height="40%", loc='lower right',
                    bbox_to_anchor=(-0.5, 0.5, 1, 1), bbox_transform=ax.transAxes)
 axins.plot(df['complete_date'], df['surge'], label='Without storm surge barrier')
