@@ -7,9 +7,9 @@ Created on Thu Jun 19 10:30:18 2025
 
 #%% Explaining what the script does
 """
-This Python script analyzes and visualizes storm surge data at Le Croisic 
-during the Xynthia storm event, comparing scenarios with and without a storm 
-surge barrier.
+This script analyzes and visualizes storm surge data from sea level data at Le 
+Croisic during the Xynthia storm event, comparing scenarios with and without a 
+storm surge barrier.
 """
 
 #%% Needed librairies imports
