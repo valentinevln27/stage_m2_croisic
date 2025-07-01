@@ -1,6 +1,6 @@
-# Explication des données utilisées lors du stage
+# Explication des données brutes utilisées lors du stage
 
-Les données présentées sont des données de prédictions marégraphiques du Croisic, de Saint-Nazaire et des Sables d'Olonne.
+Les données présentées sont les données brutes utilisées.
 
 ## Métadonnées des marégraphes
 Les [métadonnées](https://github.com/valentinevln27/stage_m2_croisic/blob/main/data_stage_m2/gauges_hf_vtd_vh_ZH.txt) des marégraphes du Croisic, de Saint-Nazaire et des Sables-d'Olonne incluent notamment le nom de chaque marégraphe, son identifiant SHOM, ses coordonnées géographiques ainsi que sa valeur de niveau moyen.
@@ -11,3 +11,11 @@ Dans le dossier [outputs](https://github.com/valentinevln27/stage_m2_croisic/tre
 
 ## Données météorologiques
 Les composantes zonale (u10) et méridienne (v10) du vent (en m/s), ainsi que la pression atmosphérique (en Pa), et leurs incertitudes ne sont pas disponibles sur le dépôt Git en raison de la taille trop importante des fichiers. Cependant, ces données peuvent être facilement récupérées en exécutant le script Python [era5_data_download.py](https://github.com/valentinevln27/stage_m2_croisic/blob/main/script_python/era5_data_download.py), après avoir sélectionné le téléchargement des données ou de leurs incertitudes.
+
+## Nature du fond
+couche nature de fond dans le dossier qgis. C'est 
+
+## MNT
+Aussi dossier qgis
+
+ -> Ajouter les sources
