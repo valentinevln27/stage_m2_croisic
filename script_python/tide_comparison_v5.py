@@ -9,8 +9,7 @@ Created on Tue Jun  3 13:16:14 2025
 """
 This script reads predicted tidal gauge data and, for i signals, a signal is 
 extracted from a specific point in a simulation with a given value of the 
-Strickler coefficient (Ks). It is important to note that each simulation with a
-Ks value contains six distinct points.
+Strickler coefficient (Ks) or roughness length (z₀). 
 
 Then, for similar time steps, the predicted tide values from the tide gauge and 
 the simulated values from a given point are gathered into a dataframe to conduct 
@@ -19,7 +18,8 @@ metrics: MAE (Mean Absolute Error), RMSE (Root Mean Square Error), and Pbiais
 (percentage bias).
 
 Finally, the MAE, RMSE, and Pbiais results are displayed for each simulation. 
-Specifically, for a simulation with a given Ks value, and for each storm studied.
+Specifically, for a simulation with a given Ks or z₀ value, and for each storm 
+studied.
 """
 
 #%% Needed librairies imports
@@ -94,7 +94,7 @@ def pbiais(obs, mod): # Calculate pbiais
     A positive bias means the model underestimates the observed values, while 
     a negative bias means the model overestimates them. In case the model overestimates
     the observed values, in the simulation we need to decrease h (so increasing u), so we 
-    need to decrease the bottom friction by increasing Ks.
+    need to decrease the bottom friction by increasing Ks or z₀.
 
     Parameters
     ----------
@@ -122,6 +122,7 @@ storms = ['martin', 'xynthia', 'celine']
 tg_code = ['99', '37', '62'] # In order, Le Croisic, Saint-Nazaire and les Sables d'Olonne
 file_tg_metadata = '../datas_stage_m2/gauges_hf_vtd_vh_ZH.txt'
 ks = 10 # The Strickler coefficient or combination number of the selected simulation
+# z0 = 5 # The roughness length or combination number of the selected simulation
 # Lists to store the results of the error metrics
 MAE = [] 
 RMSE = []
@@ -171,6 +172,8 @@ for i in range(len(tg_code)):
         # Adding legend
         plt.title(f'Predicted tide at Le Croisic (combination of Ks {ks})', fontsize=20, 
                   fontweight='bold')
+        # plt.title(f'Predicted tide at Le Croisic (combination of z0 {z0})', fontsize=20, 
+        #           fontweight='bold')
         plt.xlabel('Time', fontsize=15)
         plt.ylabel('Predicted tide (m)', fontsize=15)
         
