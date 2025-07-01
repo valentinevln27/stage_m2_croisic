@@ -1,7 +1,7 @@
 # Description des données brutes utilisées pendant le stage
 
 ## Métadonnées des marégraphes
-Les métadonnées sur les marégraphes du Croisic, de Saint-Nazaire et des Sables d'Olonne, comprennent notamment les noms des maregraphes, leur identifiant SHOM, leurs coordonées et valeur de niveau moyen.
+Les métadonnées sur les marégraphes du Croisic, de Saint-Nazaire et des Sables d'Olonne, comprennent notamment les noms des maregraphes, leur identifiant SHOM, leurs coordonées géographiques et leur valeur de niveau moyen.
 
 ## Prédictions marégraphiques
 Le dossier records comprend deux autres dossiers, inputs et outputs, et un fichier excel, data_prediction_all.
