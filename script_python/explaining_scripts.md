@@ -12,21 +12,13 @@ This script (version 2) generates different combinations of coefficients based o
 This script processes meteorological wind data from different GRIB files and compile them into a single NetCDF file. The result file of compiled data is used to analyse storms to identify a theorical storm.
 
 ## [completing_mesh_v3](https://gitlab.univ-nantes.fr/vanleene-v-1/croisic_stage/-/blob/main/script_python/completing_mesh_v3.py)
-This script adds points to complete the studied domain defined by two offshore 
-points. The eastern side of the domain is formed by a coastline construct in
-QGIS. The final GeoDataFrame containing the added points is then exported as a
-shapefile.
-
-The first point on the coastline (South) has an ID of 1, while the last one has 
-an ID of m. The point at the northwestern corner of the rectangle has an ID of 
-m+1, and the point at the southwestern corner has an ID of m+2.
-
-For better visualization, a plot is generated at the end of the script to display 
-the domain drawn with points, including the coastline, with the IDs of the 
-mentioned points labeled.
-
-Notes: Some parameters may need to be changed such as the maximal distance 
-between two points.
+This script adds points to complete the studied domain defined by two offshore points. The eastern side of the domain is formed by a coastline construct in QGIS. The final GeoDataFrame containing the added points is then exported as a shapefile.
+<br>
+The first point on the coastline (South) has an ID of 1, while the last one has an ID of m. The point at the northwestern corner of the rectangle has an ID of m+1, and the point at the southwestern corner has an ID of m+2.
+<br>
+For better visualization, a plot is generated at the end of the script to display the domain drawn with points, including the coastline, with the IDs of the mentioned points labeled.
+<br>
+Note: Some parameters may need to be changed such as the maximal distance between two points.
 
 ## [cut_points](https://gitlab.univ-nantes.fr/vanleene-v-1/croisic_stage/-/blob/main/script_python/cut_points_v2.py)
 In this script (version 2), we work with either the southern or northern section of the coastline around Le Croisic and the Guérande salt marshes.
@@ -48,6 +40,9 @@ In this script, we use an Excel file containing sea level predictions during the
     - and Les Sables-d’Olonne (SO).
 <br> 
 The data are then separated by storm and by tide gauge. We also subtract the mean sea level to allow for a better comparison with the model data used in the tide_comparison script.
+
+## [surge](https://gitlab.univ-nantes.fr/vanleene-v-1/croisic_stage/-/blob/main/script_python/surge.py)
+This script analyzes and visualizes storm surge data from sea level data at Le Croisic during the Xynthia storm event, comparing scenarios with and without a storm surge barrier.
 
 ## [tide_comparison](https://gitlab.univ-nantes.fr/vanleene-v-1/croisic_stage/-/blob/main/script_python/tide_comparison_v5.py)
 This script (version 5) reads predicted tidal gauge data and, for i signals, a signal is extracted from a specific point in a simulation with a given value of the Strickler coefficient (Ks). It is important to note that each simulation with a Ks value contains six distinct points.
