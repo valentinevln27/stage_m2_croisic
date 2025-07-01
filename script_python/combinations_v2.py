@@ -7,10 +7,11 @@ Created on Tue Mar  4 14:13:11 2025
 
 #%% Explaining what the script does
 """
-This script generates different combinations of coefficients based on three types 
-of substrates (mud/sand, gravel and rock). It then applies these combinations 
-to a GeoDataFrame (gdf), assigning a specific coefficient (ks) to each entity. 
-Finally the number of polygon per class is calculated.
+This script (version 2) generates different combinations of coefficients or roughness 
+length based on three types of substrates (mud/sand, gravel and rock). It then applies 
+these combinations to a GeoDataFrame (gdf), assigning a specific coefficient (ks) or 
+roughness length (z₀) to each entity. Finally the number of polygon per class is 
+calculated.
 """
 
 #%% Needed librairies imports
@@ -26,11 +27,15 @@ import pandas as pd
 fullFilepath = 'D:/nf_mourad/bed_materials_0225_single_parts.shp'
 gdf = gpd.read_file(fullFilepath) # Extract the data as a GeoDataFrame
 
-#%% Add a Ks value for all possible combinations
-# Define possible values for each substrate type
+#%% Add a Ks or z0 value for all possible combinations
+# Define possible values for each substrate type 
 mud_sand = [35, 45, 50, 55] # Coefficients for mud and sand
 gravel = [35, 40] # Coefficients for gravels
 rock = [20, 30]  # Coefficients for rock
+# If z0 
+# mud_sand = [0.2, 0.7, 3] # Roughness length for mud and sand
+# gravel = [1, 4] # Roughness length for gravels
+# rock = [5, 10]  # Roughness length for rock
 
 # Generating all possible combinations (each combination contains one element from each list)
 combinations = [list(combo) for combo in itertools.product(mud_sand, gravel, rock)]
@@ -38,14 +43,18 @@ i = 1 # Counter to name the columns
 for combo in combinations:
     print(combo)
     gdf[f'ks{i}'] = 0 # Add a new column in gdf to store ks values
+    # gdf[f'z0{i}'] = 0 # Add a new column in gdf to store z0 values
     for idx, nf in enumerate(gdf['NF']):
-        # Assigning the ks value based on the substrate type ('NF')
+        # Assigning the ks or z0 value based on the substrate type ('NF')
         if nf == 'NFSV': # If the substrate is "mud" or "sand"
             gdf.loc[idx, f'ks{i}'] = combo[0]
+            # gdf.loc[idx, f'z0{i}'] = combo[0]
         elif nf == 'NFR': # If the substrate is "rock"
             gdf.loc[idx, f'ks{i}'] = combo[1]
+            # gdf.loc[idx, f'z0{i}'] = combo[1]
         else: # If the substrate is "gravel"
             gdf.loc[idx,f'ks{i}'] = combo[2]
+            # gdf.loc[idx, f'z0{i}'] = combo[2]
     i += 1  # Increment the counter for the next column
 
 #%% Exporting the new shapefile
