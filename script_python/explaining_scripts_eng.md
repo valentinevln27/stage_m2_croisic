@@ -9,7 +9,7 @@ This script (version 2) processes a shapefile containing spatial data about bed 
 This script (version 2) generates different combinations of coefficients or roughness length based on three types of substrates (mud/sand, gravel and rock). It then applies these combinations to a GeoDataFrame (gdf), assigning a specific coefficient (ks) or roughness length (z₀) to each entity. Finally the number of polygon per class is calculated.
 
 ## [compiling_grib_data](https://gitlab.univ-nantes.fr/vanleene-v-1/croisic_stage/-/blob/main/script_python/compiling_grib_data.py)
-This script processes meteorological wind data from different GRIB files and compile them into a single NetCDF file. The result file of compiled data is used to analyse storms to identify a theorical storm.
+This script processes meteorological data (wind and atmospherical pressure) from different GRIB files and compile them into a single NetCDF file. The result file of compiled data is used to analyse storms to identify a theorical storm.
 
 ## [completing_mesh_v3](https://gitlab.univ-nantes.fr/vanleene-v-1/croisic_stage/-/blob/main/script_python/completing_mesh_v3.py)
 This script adds points to complete the studied domain defined by two offshore points. The eastern side of the domain is formed by a coastline construct in QGIS. The final GeoDataFrame containing the added points is then exported as a shapefile.

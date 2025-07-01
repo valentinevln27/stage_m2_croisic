@@ -7,10 +7,9 @@ Ce script (version 2) traite un fichier shapefile contenant des données spatial
 
 ## [combinaitions](https://gitlab.univ-nantes.fr/vanleene-v-1/croisic_stage/-/blob/main/script_python/combinations_v2.py)
 Ce script (version 2) génère différentes combinaisons de coefficients ou longueur de rugosité basées sur trois types de substrats (vase/sable, gravier et roche). Il applique ensuite ces combinaisons à un GeoDataFrame (gdf), en attribuant un coefficient spécifique (ks) ou une longueur de rugosité (z₀) à chaque entité. Enfin, le nombre de polygones par classe est calculé.
-This script (version 2) generates different combinations of coefficients based on three types of substrates (mud/sand, gravel and rock). It then applies these combinations to a GeoDataFrame (gdf), assigning a specific coefficient (ks) to each entity. Finally the number of polygon per class is calculated.
 
 ## [compiling_grib_data](https://gitlab.univ-nantes.fr/vanleene-v-1/croisic_stage/-/blob/main/script_python/compiling_grib_data.py)
-Ce script traite les données de vent météorologiques issues de différents fichiers GRIB et les compile dans un seul fichier NetCDF. Le fichier compilé est utilisé pour analyser les tempêtes et identifier une tempête théorique.
+Ce script traite les données météorologiques (vent et pression atmosphérique) issues de différents fichiers GRIB et les compile dans un seul fichier NetCDF. Le fichier compilé est utilisé pour analyser les tempêtes et identifier une tempête théorique.
 
 ## [completing_mesh_v3](https://gitlab.univ-nantes.fr/vanleene-v-1/croisic_stage/-/blob/main/script_python/completing_mesh_v3.py)
 Ce script ajoute des points pour compléter le domaine étudié défini par deux points au large. Le côté est du domaine est formé par un trait de côte construit dans QGIS. La GeoDataFrame finale contenant les points ajoutés est ensuite exportée en tant que shapefile.
