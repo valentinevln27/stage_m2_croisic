@@ -21,7 +21,7 @@ Pour une meilleure visualisation, une figure est générée à la fin du script 
 📌 Remarque : certains paramètres peuvent nécessiter d’être modifiés, comme la distance maximale entre deux points.
 
 ## [cut_points](https://gitlab.univ-nantes.fr/vanleene-v-1/croisic_stage/-/blob/main/script_python/cut_points_v2.py)
-Dans ce script (version 2), on travaille avec la section sud ou nord du trait de côte autour du Croisic et des marais salants de Guérande.
+Dans ce script (version 2), nous travaillons avec la section sud ou nord du trait de côte autour du Croisic et des marais salants de Guérande.
 <br>
 L’objectif est de sélectionner des points spécifiques le long du trait de côte afin d’augmenter progressivement l’espacement entre eux, en s’éloignant du Croisic vers le nord ou vers le sud, selon la section utilisée.
 
