@@ -40,7 +40,6 @@ Les données concernant la nature de fond se trouvent dans le dossier qgis. Elle
     Une seconde couche, obtenue à partir de la précédente via le script combinations.py, attribue une valeur de longueur de rugosité z₀ à chaque polygone, en fonction de sa classe et des combinaisons de substrats.
 
 Modèle Numérique de Terrain (MNT)
-
 Également présent dans le dossier qgis, le MNT utilisé provient du SHOM et se décline en deux résolutions spatiales : 1/500 000 et 1/50 000. Il comprend :
     un MNT bathymétrique de l’Atlantique,
     un MNT topo-bathymétrique pour les zones du Morbihan, des Pertuis Charentais et de la Gironde aval.
