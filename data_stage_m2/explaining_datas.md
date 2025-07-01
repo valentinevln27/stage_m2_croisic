@@ -14,7 +14,8 @@ Le dossier [outputs](https://github.com/valentinevln27/stage_m2_croisic/tree/mai
 Les composantes zonale (u10) et méridienne (v10) du vent (en m/s), ainsi que la pression atmosphérique (en Pa), et leurs incertitudes ne sont pas disponibles sur le dépôt Git en raison de la taille trop importante des fichiers. Cependant, ces données peuvent être facilement récupérées en exécutant le script Python [era5_data_download.py](https://github.com/valentinevln27/stage_m2_croisic/blob/main/script_python/era5_data_download.py), après avoir sélectionné le téléchargement des données ou de leurs incertitudes.
 
 ## Nature du fond
-couche nature de fond dans le dossier qgis. A mettre sur le git et décrire rapidement -> aussi quelques traitements réalisés, les décrires brièvement et donner le nom des couches associées.
+couche nature de fond dans le dossier qgis. A mettre sur le git et décrire rapidement -> aussi quelques traitements réalisés, les décrires brièvement et donner le nom des couches associées. Ici directement la couche coupée, interpolée et avec les 4 classes
+(https://github.com/valentinevln27/stage_m2_croisic/tree/main/qgis_files/bed_materials)
 
 ## MNT
 Aussi dossier qgis
