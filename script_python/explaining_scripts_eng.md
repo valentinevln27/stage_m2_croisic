@@ -45,11 +45,11 @@ The data are then separated by storm and by tide gauge. We also subtract the mea
 This script analyzes and visualizes storm surge data from sea level data at Le Croisic during the Xynthia storm event, comparing scenarios with and without a storm surge barrier.
 
 ## [tide_comparison](https://gitlab.univ-nantes.fr/vanleene-v-1/croisic_stage/-/blob/main/script_python/tide_comparison_v5.py)
-This script (version 5) reads predicted tidal gauge data and, for i signals, a signal is extracted from a specific point in a simulation with a given value of the Strickler coefficient (Ks). It is important to note that each simulation with a Ks value contains six distinct points.
+This script (version 5) reads predicted tidal gauge data and, for i signals, a signal is extracted from a specific point in a simulation with a given value of the Strickler coefficient (Ks) or roughness length (z₀). 
 <br>
 Then, for similar time steps, the predicted tide values from the tide gauge and the simulated values from a given point are gathered into a dataframe to conduct a comparative study. This analysis is based on the calculation of three error metrics: MAE (Mean Absolute Error), RMSE (Root Mean Square Error), and Pbiais (percentage bias).
 <br>
-Finally, the MAE, RMSE, and Pbiais results are displayed for each simulation. Specifically, for a simulation with a given Ks value, and for each storm studied.
+Finally, the MAE, RMSE, and Pbiais results are displayed for each simulation. Specifically, for a simulation with a given Ks or z₀ value, and for each storm studied.
 
 ## [trimming](https://gitlab.univ-nantes.fr/vanleene-v-1/croisic_stage/-/blob/main/script_python/trimming.py)
 This script trims a .slf layer from a mesh whose nodes contain bathymetry values. Thus, when the bathymetry value of a point exceeds a defined maximum value, it is replaced by this maximum value.

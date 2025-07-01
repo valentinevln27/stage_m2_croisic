@@ -29,31 +29,27 @@ L’objectif est de sélectionner des points spécifiques le long du trait de c�
 Ce script, fourni par l’API ERA5, permet de télécharger les données ERA5 souhaitées.
 
 ## [martin_xynthia_celine](https://gitlab.univ-nantes.fr/vanleene-v-1/croisic_stage/-/blob/main/script_python/martin_xynthia_celine_v2.py)
-Ce script (version 2) extrait les paramètres de houle et météorologiques pendant trois périodes de tempêtes (Lothar-Martin, Xynthia, Céline) à l’aide des données de bouées Candhis, des modèles de houle Copernicus (GOWR) et des réanalyses ERA5. Il calcule les valeurs moyennes pour Hs, Tp, et Dp, ainsi que la pression atmosphérique minimale et les valeurs de vent associées (u10 et v10). Les incertitudes pour chaque valeur sont également calculées et fournies.
+Ce script (version 2) extrait les paramètres météorologiques et de houle pendant trois périodes de tempêtes (Lothar-Martin, Xynthia, Céline) à l’aide des données de bouées Candhis, des modèles de houle Copernicus (GOWR) et des réanalyses ERA5. Il calcule les valeurs moyennes pour Hs, Tp, et Dp, ainsi que la pression atmosphérique minimale et les valeurs de vent associées (u10 et v10). Les incertitudes pour chaque valeur sont également calculées et fournies.
 <br>
 Tous les résultats sont présentés dans un tableau récapitulatif par tempête et par localisation de bouée.
 
 ## [prediction_data_separation](https://gitlab.univ-nantes.fr/vanleene-v-1/croisic_stage/-/blob/main/script_python/prediction_data_separation.py)
-Dans ce script, on utilise un fichier Excel contenant les prédictions de niveau marin pendant les tempêtes Lothar-Martin, Xynthia et Céline à trois marégraphes différents :
-
-    Le Croisic (CR),
-
-    Saint-Nazaire (SN),
-
-    et Les Sables-d’Olonne (SO).
-    <br>
-
-Les données sont ensuite séparées par tempête et par marégraphe. On soustrait aussi le niveau moyen de la mer pour permettre une meilleure comparaison avec les données de simulation utilisées dans le script tide_comparison.
+Dans ce script, nous utilisons un fichier Excel contenant les prédictions de niveau marin pendant les tempêtes Lothar-Martin, Xynthia et Céline à trois marégraphes différents :
+    - Le Croisic (CR),
+    - Saint-Nazaire (SN),
+    - et Les Sables-d’Olonne (SO).
+<br>
+Les données sont ensuite séparées par tempête et par marégraphe. Le niveau moyen de la mer est également soustrait pour permettre une meilleure comparaison avec les données de simulation utilisées dans le script tide_comparison (mise sous même référentiel).
 
 ## [surge](https://gitlab.univ-nantes.fr/vanleene-v-1/croisic_stage/-/blob/main/script_python/surge.py)
 Ce script analyse et visualise les données de surcote à partir des niveaux marins au Croisic pendant la tempête Xynthia, en comparant les scénarios avec et sans barrière anti-submersion.
 
 ## [tide_comparison](https://gitlab.univ-nantes.fr/vanleene-v-1/croisic_stage/-/blob/main/script_python/tide_comparison_v5.py)
-Ce script (version 5) lit les données de marégraphes prédites et, pour i signaux, extrait un signal d’un point spécifique d’une simulation avec une valeur donnée du coefficient de Strickler (Ks). Il est important de noter que chaque simulation avec un Ks donné contient six points distincts.
+Ce script (version 5) lit les données de marégraphes prédites et, pour i signaux, extrait un signal d’un point spécifique d’une simulation avec une valeur donnée du coefficient de Strickler (Ks) ou de la longueur de rugosité (z₀). Il est important de noter que chaque simulation avec un Ks ou un z₀ donné contient six points distincts.
 <br>
 Ensuite, pour des pas de temps similaires, les valeurs de marée prédites par le marégraphe et les valeurs simulées pour un point donné sont rassemblées dans un dataframe afin d’effectuer une étude comparative. Cette analyse repose sur le calcul de trois métriques d’erreur : MAE (erreur absolue moyenne), RMSE (racine de l’erreur quadratique moyenne) et Pbiais (biais en pourcentage).
 <br>
-Enfin, les résultats de MAE, RMSE et Pbiais sont affichés pour chaque simulation, spécifiquement pour une valeur de Ks donnée et pour chaque tempête étudiée.
+Enfin, les résultats de MAE, RMSE et Pbiais sont affichés pour chaque simulation, spécifiquement pour une valeur de Ks ou z₀ donnée et pour chaque tempête étudiée.
 
 ## [trimming](https://gitlab.univ-nantes.fr/vanleene-v-1/croisic_stage/-/blob/main/script_python/trimming.py)
 Ce script tronque une couche .slf issue d’un maillage dont les nœuds contiennent des valeurs de bathymétrie. Ainsi, lorsqu’une valeur de bathymétrie dépasse une valeur maximale définie, elle est remplacée par cette valeur maximale.
