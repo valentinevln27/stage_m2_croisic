@@ -3,10 +3,11 @@
 Toutes ces descriptions sont fournies au début de chaque script. Il est cependant à noter que les scripts sont tous écris et commentés en anglais.
 
 ## [bottom_nature](https://gitlab.univ-nantes.fr/vanleene-v-1/croisic_stage/-/blob/main/script_python/bottom_nature_v2.py)
-Ce script (version 2) traite un fichier shapefile contenant des données spatiales sur les matériaux de fond et classe les différents types de substrats en trois grandes catégories. Il compte ensuite le nombre de polygones appartenant à chaque catégorie.
+Ce script (version 2) traite un fichier shapefile contenant des données spatiales sur la nature du fond et classe les différents types de substrats en trois grandes catégories. Il compte ensuite le nombre de polygones appartenant à chaque catégorie.
 
 ## [combinaitions](https://gitlab.univ-nantes.fr/vanleene-v-1/croisic_stage/-/blob/main/script_python/combinations_v2.py)
-Ce script (version 2) génère différentes combinaisons de coefficients basées sur trois types de substrats (vase/sable, gravier et roche). Il applique ensuite ces combinaisons à une GeoDataFrame (gdf), en attribuant un coefficient spécifique (ks) à chaque entité. Enfin, le nombre de polygones par classe est calculé.
+Ce script (version 2) génère différentes combinaisons de coefficients ou longueur de rugosité basées sur trois types de substrats (vase/sable, gravier et roche). Il applique ensuite ces combinaisons à un GeoDataFrame (gdf), en attribuant un coefficient spécifique (ks) ou une longueur de rugosité (z₀) à chaque entité. Enfin, le nombre de polygones par classe est calculé.
+This script (version 2) generates different combinations of coefficients based on three types of substrates (mud/sand, gravel and rock). It then applies these combinations to a GeoDataFrame (gdf), assigning a specific coefficient (ks) to each entity. Finally the number of polygon per class is calculated.
 
 ## [compiling_grib_data](https://gitlab.univ-nantes.fr/vanleene-v-1/croisic_stage/-/blob/main/script_python/compiling_grib_data.py)
 Ce script traite les données de vent météorologiques issues de différents fichiers GRIB et les compile dans un seul fichier NetCDF. Le fichier compilé est utilisé pour analyser les tempêtes et identifier une tempête théorique.

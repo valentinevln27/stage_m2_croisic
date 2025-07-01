@@ -6,7 +6,7 @@ All of these descriptions are provided at the beginning of each script.
 This script (version 2) processes a shapefile containing spatial data about bed materials and classifies different substrate types into three broad categories. It then counts the number of polygons belonging to each category.
 
 ## [combinaitions](https://gitlab.univ-nantes.fr/vanleene-v-1/croisic_stage/-/blob/main/script_python/combinations_v2.py)
-This script (version 2) generates different combinations of coefficients based on three types of substrates (mud/sand, gravel and rock). It then applies these combinations to a GeoDataFrame (gdf), assigning a specific coefficient (ks) to each entity. Finally the number of polygon per class is calculated.
+This script (version 2) generates different combinations of coefficients or roughness length based on three types of substrates (mud/sand, gravel and rock). It then applies these combinations to a GeoDataFrame (gdf), assigning a specific coefficient (ks) or roughness length (z₀) to each entity. Finally the number of polygon per class is calculated.
 
 ## [compiling_grib_data](https://gitlab.univ-nantes.fr/vanleene-v-1/croisic_stage/-/blob/main/script_python/compiling_grib_data.py)
 This script processes meteorological wind data from different GRIB files and compile them into a single NetCDF file. The result file of compiled data is used to analyse storms to identify a theorical storm.
