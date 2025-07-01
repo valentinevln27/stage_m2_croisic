@@ -7,8 +7,9 @@ Created on Tue Apr 29 10:29:27 2025
 
 #%% Explaining what the script does
 """
-This script processes meteorological wind data from different GRIB files and 
-compile them into a single NetCDF file.
+This script processes meteorological data (wind and atmospherical pressure) from 
+different GRIB files and compile them into a single NetCDF file. The result file 
+of compiled data is used to analyse storms to identify a theorical storm.
 """
 
 #%% Needed librairies import
