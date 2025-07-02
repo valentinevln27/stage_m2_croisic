@@ -14,8 +14,13 @@ Ces fichiers outputs ont été générés à partir du fichier data_prediction_a
 
 ## Nature de fond
 Les données concernant la nature de fond se trouvent dans le dossier qgis. Elles proviennent du SHOM et ont été traitées à l’aide de scripts Python :
-    - Une première couche contient des polygones classés selon trois types de substrats : roche, graviers et cailloutis, sable et vase. Cette classification a été réalisée avec le script bottom_nature.py.
-    - Une seconde couche, obtenue à partir de la précédente via le script combinations.py, attribue une valeur de longueur de rugosité z₀ à chaque polygone, en fonction de sa classe et des combinaisons de substrats.
+    - Une première couche contient des polygones classés selon trois types de substrats : roche, graviers et cailloutis, sable et vase. Cette classification a été réalisée avec le script bottom_nature.py. Elle résulte de la fusion de deux couches sources du SHOM : les cartes polygonales au 1/500 000 (Golfe de Gascogne) et au 1/50 000 (littoral métropolitain).
+    - Une seconde couche, obtenue à partir de la précédente via le script combinations.py, attribue une valeur de longueur de rugosité z₀ à chaque polygone, en fonction de sa classe et des combinaisons de substrats. 
+Lors de cette étude, , plusieurs variantes de cette seconde couche ont été créées, chacune associant des valeurs différentes de coefficients de Strickler (ks) selon quatre classes de substrat et différentes combinaisons de coefficients. 
+<br>
+Ces couches ne sont pas disponibles sur le dépôt GitHub, mais elles peuvent être facilement reproduites en exécutant le script combinations_v2.py, après avoir défini les valeurs de ks souhaitées.
+<br>
+Les différents jeux de coefficients ks testés dans les simulations sont répertoriés dans le fichier de validation du modèle nommé indicators_ks.
 
 ## Modèle Numérique de Terrain (MNT)
 Également présent dans le dossier qgis, le MNT utilisé provient du SHOM et se décline en deux résolutions spatiales : 100 et 20 mètres. Il comprend :
