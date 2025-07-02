@@ -4,7 +4,7 @@
 <p align="justify">Les métadonnées sur les marégraphes du Croisic, de Saint-Nazaire et des Sables d'Olonne, comprennent notamment les noms des maregraphes, leur identifiant SHOM, leurs coordonées géographiques et leur valeur de niveau moyen.</p>
 
 ## Prédictions marégraphiques
-<p align="justify">Le dossier records comprend deux sous-dossiers (inputs et outputs) et un fichier excel nommé `data_prediction_all.xlsx`. Ce fichier regroupe les prédictions marégraphiques fournies par le SHOM pour les sites du Croisic, de Saint-Nazaire et des Sables-d’Olonne, lors des tempêtes Lothar-Martin, Xynthia et Céline.</p>
+<p align="justify">Le dossier records comprend deux sous-dossiers (inputs et outputs) et un fichier excel nommé <code>data_prediction_all.xlsx</code>. Ce fichier regroupe les prédictions marégraphiques fournies par le SHOM pour les sites du Croisic, de Saint-Nazaire et des Sables-d’Olonne, lors des tempêtes Lothar-Martin, Xynthia et Céline.</p>
 
 Le dossier inputs contient ces prédictions marégraphiques organisées par tempête. En colonne, se trouve les valeurs par marégraphe. <br></br>
 Le dossier outputs comprend, quant à lui, les prédictions classées à la fois par tempête et par identifiant SHOM du marégraphe :
@@ -12,7 +12,7 @@ Le dossier outputs comprend, quant à lui, les prédictions classées à la fois
 - 37 : Saint-Nazaire
 - 62 : les Sables d'Olonne
 <p align="justify">
-Ces fichiers outputs ont été générés à partir du fichier <code>data_prediction_all.xlsx</code> à l’aide du script `prediction_data_separation.py`, qui effectue un tri par marégraphe et par tempête, puis soustrait le niveau moyen propre à chaque site.
+Ces fichiers outputs ont été générés à partir du fichier <code>data_prediction_all.xlsx</code> à l’aide du script <code>prediction_data_separation.py</code>, qui effectue un tri par marégraphe et par tempête, puis soustrait le niveau moyen propre à chaque site.
 </p>
 
 ## Nature de fond
