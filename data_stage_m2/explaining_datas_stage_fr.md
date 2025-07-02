@@ -30,4 +30,4 @@ Les différents jeux de coefficients ks testés dans les simulations sont réper
 Également présent dans le dossier qgis, le MNT utilisé provient du SHOM et se décline en deux résolutions spatiales : 100 et 20 mètres. Il comprend :
 - un MNT bathymétrique de l’Atlantique (le seul d'une résolution de 100 mètres),
 - trois MNT topo-bathymétriques distincts pour les zones du Morbihan, des Pertuis Charentais et de la Gironde aval.
-- un MNT correspondant à la fusion de ces quatres MNT bathymétrique et topobathymétrique. Les valeurs prioritaires sont données d'abord au Morbihan, puis les pertuis charentais puis la gironde pour finir avec l'Atlantique
+- <p align="justify">un MNT correspondant à la fusion de ces quatres MNT bathymétrique et topobathymétrique. Les valeurs prioritaires sont données d'abord au Morbihan, puis les pertuis charentais puis la gironde pour finir avec l'Atlantique</p>
