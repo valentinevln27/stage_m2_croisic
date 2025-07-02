@@ -4,7 +4,7 @@
 Les métadonnées sur les marégraphes du Croisic, de Saint-Nazaire et des Sables d'Olonne, comprennent notamment les noms des maregraphes, leur identifiant SHOM, leurs coordonées géographiques et leur valeur de niveau moyen.
 
 ## Prédictions marégraphiques
-<div style="text-align: justify;">Le dossier records comprend deux sous-dossiers (inputs et outputs) et un fichier excel nommé `data_prediction_all.xlsx`. Ce fichier regroupe les prédictions marégraphiques fournies par le SHOM pour les sites du Croisic, de Saint-Nazaire et des Sables-d’Olonne, lors des tempêtes Lothar-Martin, Xynthia et Céline.</div>
+<p align="justify">Le dossier records comprend deux sous-dossiers (inputs et outputs) et un fichier excel nommé `data_prediction_all.xlsx`. Ce fichier regroupe les prédictions marégraphiques fournies par le SHOM pour les sites du Croisic, de Saint-Nazaire et des Sables-d’Olonne, lors des tempêtes Lothar-Martin, Xynthia et Céline.</p>
 
 Le dossier inputs contient ces prédictions organisées par tempête.
 Le dossier outputs comprend, quant à lui, les prédictions classées à la fois par tempête et par identifiant SHOM du marégraphe :
