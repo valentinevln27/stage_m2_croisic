@@ -29,3 +29,6 @@ Lors de cette étude, plusieurs variantes de cette seconde couche ont été cré
 ## Modèle Numérique de Terrain (MNT) (les mnt pas mis car passe pas sur le git)
 <p align="justify">Également présent dans le dossier qgis, le MNT Atlantique utilisé — d'une résolution d'environ 100 mètres — provient du SHOM. Il a été découpé puis interpolé à l'aide de la méthode IDW (Inverse Distance Weighting).</p>
 
+## Récapitulatif des données et traitement réalisés pour chaque modèle
+<p align="justify">Pour plus de claireté, un tableau a été réalisé pour préciser pour chaque modèle utilisé, les données utilisées, les traitements réalisés et les options inclues (période de simulation, méthode utilisée pour simuler le frottement, ...). Il est à noter que tous les fichiers utilisés (données acquises, traités, crées et fichiers de résultats) pour les différents modèles ne sont pas donnés. Seuls ceux utilisés pour le dernier domaine sont donnés. Cependant, si le stockage est suffissant sur le Gitlab j'essaierai d'ajouter un fichier zip et un tableau récapitulatif de la description de chaque fichier, sinon sur demande, je pourrais les fournir via un lien filesender.</p>
+
