@@ -27,9 +27,5 @@ Lors de cette étude, plusieurs variantes de cette seconde couche ont été cré
 <p align="justify">Les différents jeux de coefficients ks testés dans les simulations sont répertoriés dans le fichier de validation du modèle nommé <code>indicators_ks</code>.</p>
 
 ## Modèle Numérique de Terrain (MNT) (les mnt pas mis car passe pas sur le git)
-Également présent dans le dossier qgis, le MNT utilisé provient du SHOM et se décline en deux résolutions spatiales : 100 et 20 mètres. Il comprend :
-- un MNT bathymétrique de l’Atlantique (le seul d'une résolution de 100 mètres),
-- trois MNT topo-bathymétriques distincts pour les zones du Morbihan, des Pertuis Charentais et de la Gironde aval.
-- <p align="justify">un MNT résultant de la fusion de ces quatre modèles numériques de terrain bathymétriques et topo-bathymétriques. La priorité des valeurs est d’abord donnée au Morbihan, puis aux pertuis charentais, ensuite à la Gironde, pour enfin intégrer les données de l’Atlantique.</p>
+<p align="justify">Également présent dans le dossier qgis, le MNT Atlantique utilisé — d'une résolution d'environ 100 mètres — provient du SHOM. Il a été découpé puis interpolé à l'aide de la méthode IDW (Inverse Distance Weighting).</p>
 
---> Il faudra ajouter les liens hypertexte
