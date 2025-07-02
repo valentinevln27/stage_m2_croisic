@@ -13,23 +13,12 @@ Le dossier outputs comprend, quant à lui, les prédictions classées à la fois
 Ces fichiers outputs ont été générés à partir du fichier data_prediction_all.xlsx à l’aide du script prediction_data_separation.py, qui effectue un tri par marégraphe et par tempête, puis soustrait le niveau moyen propre à chaque site.
 
 ## Nature de fond
-Dans le dossier qgis. Données issues du SHOM mais avec la couche déjà avec les polygones classés par 3 types de substrats (roche, graviers et cailloutis, sable et vase) via le script python bottom_nature.
-Second groupe de fichiers qgis pareil mais avec les valeurs de longueur de rugosité suivant la combinaison et la classe. Couche obtenue via la script combinations avec en entrée la couche décrite précédemment.
-
-## MNT
-Aussi dans le dossier qgis. Données du SHOM avec 2 résolutions : 1/500000 et 1/50000. MNT bathy de l'Atlantique, MNT topo-bathy du Morbihan, des pertuis Charentais et de la Gironde aval.
-Le fichier mnt_group, regroupe ces mnt.
-
--> Pas oublier de donner les sources
-
-
-Nature de fond
 Les données concernant la nature de fond se trouvent dans le dossier qgis. Elles proviennent du SHOM et ont été traitées à l’aide de scripts Python :
-    Une première couche contient des polygones classés selon trois types de substrats : roche, graviers et cailloutis, sable et vase. Cette classification a été réalisée avec le script bottom_nature.py.
-    Une seconde couche, obtenue à partir de la précédente via le script combinations.py, attribue une valeur de longueur de rugosité z₀ à chaque polygone, en fonction de sa classe et des combinaisons de substrats.
+    - Une première couche contient des polygones classés selon trois types de substrats : roche, graviers et cailloutis, sable et vase. Cette classification a été réalisée avec le script bottom_nature.py.
+    - Une seconde couche, obtenue à partir de la précédente via le script combinations.py, attribue une valeur de longueur de rugosité z₀ à chaque polygone, en fonction de sa classe et des combinaisons de substrats.
 
-Modèle Numérique de Terrain (MNT)
-Également présent dans le dossier qgis, le MNT utilisé provient du SHOM et se décline en deux résolutions spatiales : 1/500 000 et 1/50 000. Il comprend :
-    un MNT bathymétrique de l’Atlantique,
-    un MNT topo-bathymétrique pour les zones du Morbihan, des Pertuis Charentais et de la Gironde aval.
-L’ensemble de ces fichiers est regroupé dans le fichier mnt_group.
+## Modèle Numérique de Terrain (MNT)
+Également présent dans le dossier qgis, le MNT utilisé provient du SHOM et se décline en deux résolutions spatiales : 100 et 20 mètres. Il comprend :
+    - un MNT bathymétrique de l’Atlantique (le seul d'une résolution de 100 mètres),
+    - trois MNT topo-bathymétriques distincts pour les zones du Morbihan, des Pertuis Charentais et de la Gironde aval.
+    - un MNT correspondant à la fusion de ces quatres MNT bathymétrique et topobathymétrique. Les valeurs prioritaires sont données d'abord au Morbihan, puis les pertuis charentais puis la gironde pour finir avec l'Atlantique
