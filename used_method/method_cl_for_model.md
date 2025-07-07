@@ -95,9 +95,10 @@ Le maillage a été généré à l’aide de BlueKenue, en utilisant le trait de
     else NULL
     end 
     ```
-- Pour les plus grands domaines, sélectionner la valeur de bathymétrie selon l’ordre de priorité suivant : Morbihan, Pertuis Charentais, Gironde, façade Atlantique.
+- Pour certains des plus grands domaines, sélectionner la valeur de bathymétrie selon l’ordre de priorité suivant : Morbihan, Pertuis Charentais, Gironde, façade Atlantique. Pour les autres, seulements prendre les données de la façade Atlantique. 
 - Ajouter une colonne id ($id+1).
 - Enregistrer la couche de nœuds du maillage contenant la valeur de bathymétrie .
+📌 Remarque : le fichier excel `models_characteristics` précise quel modèle a utilisé quel(s) fichier(s) de bathymétrie.
 
 **PYTHON :**
 - Importer le maillage avec les valeurs de bathymétrie.
